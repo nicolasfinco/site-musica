@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --cor-fundo: #09090b;
+    --cor-fundo-secundario: #18181B;
+    --cor-branco: #fff;
+    --cor-preto: #000;
+    --cor-texto: #a1a1aa;
+    --cor-destaque: #f7b733;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 25px 0px;
+}
+
+header nav a {
+    color: var(--cor-texto);
+    margin: 0px 10px;
+}
+
+header nav a:hover {
+    color: var(--cor-branco);
+}
+
+.btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 1px solid var(--cor-branco);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+
+.btn-primary:hover {
+    color: var(--cor-branco) !important;
+    background-color: transparent !important;
+}
+
+.btn-outline {
+    color: var(--cor-branco);
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--cor-branco) !important;
+    color: var(--cor-preto) !important;
+}
+
+.column {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.title {
+    font-size: 4em;
+    color: var(--cor-branco);
+}
+
+.subtitle {
+    font-size: 2.5em;
+    color: var(--cor-texto);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.bg-img {
+    height: 60vh;
+    padding-top: 100px;
+    background-image: url(../img/sol.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.app {
+    background: var(--cor-fundo-secundario);
+    padding: 100px 20px;
+}
+
+.app .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app .text {
+    flex: 1;
+    color: var(--cor-branco);
+}
+
+.app h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.app p {
+    color: var(--cor-texto);
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.app .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.app img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: var(--cor-fundo);
+    padding: 40px 0;
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+
+
